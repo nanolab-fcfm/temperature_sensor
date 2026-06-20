@@ -1,0 +1,107 @@
+site_name: Temperature Sensor
+site_description: Custom serial temperature sensor (hardware + firmware) for the NanoLab setup.
+site_author: NanoLab FCFM
+copyright: >-
+  Copyright © 2024 NanoLab — FCFM ·
+  <a href="https://nanolab.cl/">nanolab.cl</a>
+site_url: https://nanolab.cl/temperature_sensor/
+
+repo_name: nanolab-fcfm/temperature_sensor
+repo_url: https://github.com/nanolab-fcfm/temperature_sensor
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+
+validation:
+  links:
+    absolute_links: ignore
+    anchors: warn
+    unrecognized_links: warn
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo/logo.png
+  favicon: assets/logo/favicon-32x32.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: orange
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: material/web
+      link: https://nanolab.cl/
+      name: NanoLab website
+    - icon: fontawesome/brands/github
+      link: https://github.com/nanolab-fcfm/temperature_sensor
+      name: Temperature Sensor on GitHub
+  generator: false
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - ⬅ NanoLab: https://nanolab.cl/
+  - Home: index.md
+  - Hardware: hardware.md
+  - Firmware: firmware.md
+  - Usage: usage.md
