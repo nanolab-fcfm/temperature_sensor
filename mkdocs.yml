@@ -70,6 +70,9 @@ extra_css:
 extra_javascript:
   - assets/javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  # Google's <model-viewer> web component for the interactive 3D PCB render.
+  - path: https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js
+    type: module
 
 markdown_extensions:
   - abbr
