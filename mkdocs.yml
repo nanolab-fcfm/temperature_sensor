@@ -100,7 +100,7 @@ markdown_extensions:
       alternate_style: true
 
 nav:
-  - ⬅ NanoLab: https://nanolab.cl/
+  - ⬅ NanoLab Docs: https://nanolab.cl/documentation/
   - Home: index.md
   - Hardware: hardware.md
   - Firmware: firmware.md
